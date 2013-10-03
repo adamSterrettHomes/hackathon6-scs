@@ -37,7 +37,8 @@
     },
     "autoload": {
         "psr-0": {
-          "": ["application/controllers", "library", "tests", "tests/library", "tests/application", "tests/application/controllers"]
+          "": ["application/controllers", "library", "tests", "tests/library", "tests/application", "tests/application/controllers"],
+          "Plugin" : "application"
         }
     }
 }
