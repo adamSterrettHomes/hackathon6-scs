@@ -19,6 +19,24 @@ final class FindController extends Zend_Controller_Action
         $this->_helper->json(['result' => $result]);
     }
 
+    public function rvsAction()
+    {
+        $result = self::_getResult('rvs', $this->_request->getParams());
+        $this->_helper->json($result);
+    }
+
+    public function trucksAction()
+    {
+        $result = self::_getResult('trucks', $this->_request->getParams(), ['classId' => ['1', '2', '3', '4', '5', '6', '7', '8']]);
+        $this->_helper->json($result);
+    }
+
+    public function equipmentAction()
+    {
+        $result = self::_getResult('equipment', $this->_request->getParams());
+        $this->_helper->json($result);
+    }
+
     public function cyclesAction()
     {
         $result = self::_getResult('cycles', $this->_request->getParams(), ['classId' => '356953']);
@@ -106,6 +124,7 @@ final class FindController extends Zend_Controller_Action
                 'latitude' => $item['latitude'],
                 'city' => $item['city'],
                 'state' => $item['state'],
+                'zip' => $item['zip'],
                 'link' => $item['adDetailUrl'],
                 'sellerType' => $item['dealerId'] === null ? 'private' : 'dealer',
             ];
