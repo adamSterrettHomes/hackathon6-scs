@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:80>
-   DocumentRoot "/home/cgray/projects/WigetBuilder/public"
-   ServerName WigetBuilder.local
+   DocumentRoot "/home/cgray/projects/WidgetBuilder/public"
+   ServerName WidgetBuilder.local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
 
-   <Directory "/home/cgray/projects/WigetBuilder/public">
+   <Directory "/home/cgray/projects/WidgetBuilder/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
