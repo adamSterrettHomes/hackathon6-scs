@@ -1,17 +1,14 @@
 <style>
     a:link,
-    a:visited
-    {
+    a:visited {
         color: #0398CA;
     }
 
-    span#zf-name
-    {
+    span#zf-name {
         color: #91BE3F;
     }
 
-    div#welcome
-    {
+    div#welcome {
         color: #FFFFFF;
         background-image: url(http://framework.zend.com/images/bkg_header.jpg);
         width:  600px;
@@ -21,13 +18,25 @@
         text-align: center;
     }
 
-    div#more-information
-    {
+    div#more-information {
         background-image: url(http://framework.zend.com/images/bkg_body-bottom.gif);
         height: 100%;
     }
 </style>
-<div id="welcome">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript">
+    (function(app) {
+        var pwcTemplate = '<div class="pwcResults"><ul><% for (var i = 0; i < results.length; i++) { %><li><a href="<%=results[i].link%>"><%=results[i].year%> <%=results[i].make%> <%=results[i].model%><br /><img src="<%=results[i].photo%>" /></a></li><% } %></ul>',
+            widgetContent;
+        app.search('pwcs', { offset: 0, limit: 20 }, function (err, results) {
+            if (err) { console.log(err); return; }
+            widgetContent = app.render(pwcTemplate, results);
+            document.getElementById('pwcWidget').innerHTML = widgetContent;
+        });
+    })(getInstance());
+</script>
+<div id="pwcWidget"></div>
+<!-- <div id="welcome">
     <h1>Welcome to the <span id="zf-name">Zend Framework!</span></h1>
 
     <h3>This is your project's main page</h3>
@@ -40,4 +49,4 @@
             <a href="http://framework.zend.com/manual/en/">Zend Framework Manual</a>
         </p>
     </div>
-</div>
+</div> -->
