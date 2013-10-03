@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "82b46ce5c9cb32a9a4464f2c2e7c298d",
+    "hash": "fdc77fb8b9b78f5aa5a72192ca3da4ac",
     "packages": [
         {
             "name": "dominionenterprises/filter",
@@ -52,58 +52,6 @@
                 "utility"
             ],
             "time": "2013-09-17 15:42:22"
-        },
-        {
-            "name": "dominionenterprises/tol-api-php",
-            "version": "v2.0.3",
-            "source": {
-                "type": "git",
-                "url": "ssh://git@github.com/dominionenterprises/tol-api-php",
-                "reference": "v2.0.3"
-            },
-            "require": {
-                "dominionenterprises/util": "dev-master",
-                "ext-curl": "*",
-                "lib-curl": "~7.15",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "dominionenterprises/dws-coding-standard": "~1.1",
-                "lib-libxml": "*",
-                "phpunit/phpunit": "~3.7.19",
-                "squizlabs/php_codesniffer": "~1.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "TOL": "src"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Chad Gray",
-                    "email": "chad.gray@dominionenterprises.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Spencer Rinehart",
-                    "email": "spencer.rinehart@dominionenterprises.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jonathan Gaillard",
-                    "email": "jonathan.gaillard@dominionenterprises.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Php Client for the Tol Api",
-            "keywords": [
-                "api"
-            ],
-            "time": "2013-09-19 19:52:55"
         },
         {
             "name": "dominionenterprises/util",
