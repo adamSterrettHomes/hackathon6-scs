@@ -26,11 +26,12 @@
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript">
     (function(app) {
-        var pwcTemplate = '<div class="pwcResults"><ul><% for (var i = 0; i < results.length; i++) { %><li><a href="<%=link%>"><%=year%> <%=make%> <%model%><br /><img src="<%=photo%>" /></a></li><% } %></ul>',
+        var pwcTemplate = '<div class="pwcResults"><ul><% for (var i = 0; i < results.length; i++) { %><li><a href="<%=results[i].link%>"><%=results[i].year%> <%=results[i].make%> <%=results[i].model%><br /><img src="<%=results[i].photo%>" /></a></li><% } %></ul>',
             widgetContent;
-        app.search('pwcs', { offset: 0, limit: 20 }, function (results) {
+        app.search('pwcs', { offset: 0, limit: 20 }, function (err, results) {
+            if (err) { console.log(err); return; }
             widgetContent = app.render(pwcTemplate, results);
-            document.getElementById('pwcWidget').innerHTML(widgetContent);
+            document.getElementById('pwcWidget').innerHTML = widgetContent;
         });
     })(getInstance());
 </script>

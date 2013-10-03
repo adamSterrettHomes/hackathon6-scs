@@ -43,7 +43,8 @@ Widget.prototype.api = function api (endpoint, callback) {
       baseUrl = "http://scsninjas.com";
 
   xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyStart === 4 && xmlhttp.status === 200) {
+    if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+      console.log(JSON.parse(xmlhttp.responseText));
       return callback(null, JSON.parse(xmlhttp.responseText));
     }
   };
