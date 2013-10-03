@@ -19,6 +19,12 @@ final class FindController extends Zend_Controller_Action
         $this->_helper->json(['result' => $result]);
     }
 
+    public function aerosAction()
+    {
+        $result = self::_getResult('aeros', $this->_request->getParams());
+        $this->_helper->json($result);
+    }
+
     public function rvsAction()
     {
         $result = self::_getResult('rvs', $this->_request->getParams());
