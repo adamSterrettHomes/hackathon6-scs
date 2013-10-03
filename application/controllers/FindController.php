@@ -106,6 +106,7 @@ final class FindController extends Zend_Controller_Action
                 'latitude' => $item['latitude'],
                 'city' => $item['city'],
                 'state' => $item['state'],
+                'link' => $item['adDetailUrl'],
             ];
         }
 
