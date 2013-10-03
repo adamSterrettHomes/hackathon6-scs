@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fdc77fb8b9b78f5aa5a72192ca3da4ac",
+    "hash": "37979614679927ede579162c223dda2f",
     "packages": [
         {
             "name": "dominionenterprises/filter",
