@@ -107,6 +107,7 @@ final class FindController extends Zend_Controller_Action
                 'city' => $item['city'],
                 'state' => $item['state'],
                 'link' => $item['adDetailUrl'],
+                'sellerType' => $item['dealerId'] === null ? 'private' : 'dealer',
             ];
         }
 
