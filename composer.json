@@ -1,0 +1,44 @@
+{
+    "name": "hackathon6/scs",
+    "description": "TOL Widget Builder",
+    "keywords": ["hackathon"],
+    "authors": [
+        {
+            "name": "Chad Gray",
+            "email": "chad.gray@dominionenterprises.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "proprietary",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://dominionenterprises.github.io/dws-composer"
+        },
+        {
+            "type": "pear",
+            "url": "http://pear.phpunit.de"
+        }
+    ],
+    "require": {
+        "php": "~5.4",
+        "dominionenterprises/util": "dev-master",
+        "dominionenterprises/filter": "dev-master",
+        "dominionenterprises/tol-api-php": "~2.0", 
+        "zendframework/zendframework1": "1.12.1",
+        "ext-mongo": ">=1.3.5,<2.0",
+        "ext-json": "~1.2"
+    },
+    "require-dev": {
+        "pear-phpunit/phpunit": "~3.4.15",
+        "squizlabs/php_codesniffer": "~1.4",
+        "dominionenterprises/dws-coding-standard": "~1.1",
+        "lib-libxml": "*",
+        "phpseclib/phpseclib": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+          "": ["application/controllers", "library", "tests", "tests/library", "tests/application", "tests/application/controllers"]
+        }
+    }
+}

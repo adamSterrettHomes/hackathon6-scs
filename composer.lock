@@ -1,0 +1,447 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "82b46ce5c9cb32a9a4464f2c2e7c298d",
+    "packages": [
+        {
+            "name": "dominionenterprises/filter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/dominionenterprises/filter-php",
+                "reference": "85209c95e86372ae1ca7046e71c96e36e93eeda1"
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "dominionenterprises/dws-coding-standard": "~1.1",
+                "lib-libxml": "*",
+                "phpunit/phpunit": "~3.7.19"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "DominionEnterprises": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chad.gray@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "spencer.rinehart@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Gaillard",
+                    "email": "jonathan.gaillard@dominionenterprises.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A filtering implementation for verifying correct data and performing typical modifications to data",
+            "keywords": [
+                "utility"
+            ],
+            "time": "2013-09-17 15:42:22"
+        },
+        {
+            "name": "dominionenterprises/tol-api-php",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/dominionenterprises/tol-api-php",
+                "reference": "v2.0.3"
+            },
+            "require": {
+                "dominionenterprises/util": "dev-master",
+                "ext-curl": "*",
+                "lib-curl": "~7.15",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "dominionenterprises/dws-coding-standard": "~1.1",
+                "lib-libxml": "*",
+                "phpunit/phpunit": "~3.7.19",
+                "squizlabs/php_codesniffer": "~1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "TOL": "src"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chad.gray@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "spencer.rinehart@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Gaillard",
+                    "email": "jonathan.gaillard@dominionenterprises.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Php Client for the Tol Api",
+            "keywords": [
+                "api"
+            ],
+            "time": "2013-09-19 19:52:55"
+        },
+        {
+            "name": "dominionenterprises/util",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/dominionenterprises/util-php",
+                "reference": "d399f77262ea4b9ce1b51336e8ecacfe6cf29dee"
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "dominionenterprises/dws-coding-standard": "~1.1",
+                "lib-libxml": "*",
+                "phpunit/phpunit": "~3.7.19"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "DominionEnterprises": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chad.gray@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "spencer.rinehart@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Gaillard",
+                    "email": "jonathan.gaillard@dominionenterprises.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of utility classes",
+            "keywords": [
+                "utility"
+            ],
+            "time": "2013-09-16 21:16:27"
+        },
+        {
+            "name": "zendframework/zendframework1",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zf1.git",
+                "reference": "8625a23cbd41327ea69c6afc827364419d8a4b20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zf1/zipball/8625a23cbd41327ea69c6afc827364419d8a4b20",
+                "reference": "8625a23cbd41327ea69c6afc827364419d8a4b20",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.11"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-trunk": "1.12.x-dev",
+                    "dev-release-1.0": "1.0.x-dev",
+                    "dev-release-1.5": "1.5.x-dev",
+                    "dev-release-1.6": "1.6.x-dev",
+                    "dev-release-1.7": "1.7.x-dev",
+                    "dev-release-1.8": "1.8.x-dev",
+                    "dev-release-1.9": "1.9.x-dev",
+                    "dev-release-1.10": "1.10.x-dev",
+                    "dev-release-1.11": "1.11.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "library/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Zend Framework 1",
+            "homepage": "http://framework.zend.com/",
+            "keywords": [
+                "ZF1",
+                "framework"
+            ],
+            "time": "2012-12-18 15:55:50"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "dominionenterprises/dws-coding-standard",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@github.com/dominionenterprises/dws-coding-standard",
+                "reference": "v1.3.1"
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "squizlabs/php_codesniffer": "~1.4"
+            },
+            "require-dev": {
+                "lib-libxml": "*",
+                "phpunit/phpunit": "~3.7.19"
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Gray",
+                    "email": "chad.gray@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "spencer.rinehart@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Gaillard",
+                    "email": "jonathan.gaillard@dominionenterprises.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "DWS Coding standard",
+            "keywords": [
+                "coding",
+                "phpcs",
+                "standard"
+            ],
+            "time": "2013-06-10 17:39:37"
+        },
+        {
+            "name": "pear-pear.phpunit.de/PHPUnit",
+            "version": "3.4.15",
+            "dist": {
+                "type": "file",
+                "url": "http://pear.phpunit.de/get/PHPUnit-3.4.15.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-spl": "*",
+                "php": ">=5.1.4.0"
+            },
+            "replace": {
+                "pear-phpunit/phpunit": "== 3.4.15.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "description": "The PHP Unit Testing framework."
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "77447a3fc7869773007fa3beeb8d6f8de842ec2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/77447a3fc7869773007fa3beeb8d6f8de842ec2a",
+                "reference": "77447a3fc7869773007fa3beeb8d6f8de842ec2a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "suggest": {
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a wide variety of cryptographic operations.",
+                "pear-pear/PHP_Compat": "Install PHP_Compat to get phpseclib working on PHP >= 4.3.3."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Crypt": "phpseclib/",
+                    "File": "phpseclib/",
+                    "Math": "phpseclib/",
+                    "Net": "phpseclib/"
+                },
+                "files": [
+                    "phpseclib/Crypt/Random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "phpseclib/"
+            ],
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "x.509",
+                "x509"
+            ],
+            "time": "2013-09-20 17:14:01"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "1.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "df764a1604607ea61c4eeea5410666e27cb37a8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/df764a1604607ea61c4eeea5410666e27cb37a8b",
+                "reference": "df764a1604607ea61c4eeea5410666e27cb37a8b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.1.2"
+            },
+            "suggest": {
+                "phpunit/php-timer": "dev-master"
+            },
+            "bin": [
+                "scripts/phpcs"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "CodeSniffer.php",
+                    "CodeSniffer/CLI.php",
+                    "CodeSniffer/Exception.php",
+                    "CodeSniffer/File.php",
+                    "CodeSniffer/MultiFileSniff.php",
+                    "CodeSniffer/Report.php",
+                    "CodeSniffer/Reporting.php",
+                    "CodeSniffer/Sniff.php",
+                    "CodeSniffer/Tokens.php",
+                    "CodeSniffer/Reports/",
+                    "CodeSniffer/CommentParser/",
+                    "CodeSniffer/Tokenizers/",
+                    "CodeSniffer/DocGenerators/",
+                    "CodeSniffer/Standards/AbstractPatternSniff.php",
+                    "CodeSniffer/Standards/AbstractScopeSniff.php",
+                    "CodeSniffer/Standards/AbstractVariableSniff.php",
+                    "CodeSniffer/Standards/IncorrectPatternException.php",
+                    "CodeSniffer/Standards/Generic/Sniffs/",
+                    "CodeSniffer/Standards/MySource/Sniffs/",
+                    "CodeSniffer/Standards/PEAR/Sniffs/",
+                    "CodeSniffer/Standards/PSR1/Sniffs/",
+                    "CodeSniffer/Standards/PSR2/Sniffs/",
+                    "CodeSniffer/Standards/Squiz/Sniffs/",
+                    "CodeSniffer/Standards/Zend/Sniffs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2013-09-26 00:08:21"
+        }
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dominionenterprises/util": 20,
+        "dominionenterprises/filter": 20,
+        "phpseclib/phpseclib": 20
+    },
+    "platform": {
+        "php": "~5.4",
+        "ext-mongo": ">=1.3.5,<2.0",
+        "ext-json": "~1.2"
+    },
+    "platform-dev": {
+        "lib-libxml": "*"
+    }
+}
