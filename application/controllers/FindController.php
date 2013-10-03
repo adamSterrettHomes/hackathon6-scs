@@ -68,6 +68,14 @@ final class FindController extends Zend_Controller_Action
         if ($latitude !== null)
             $filters['latitude'] = $latitude;
 
+        $sellerType = Arrays::get($parameters, 'sellerType');
+        if ($sellerType !== null)
+            $filters['sellerType'] = $sellerType;
+
+        $dealerId = Arrays::get($parameters, 'dealerId');
+        if ($dealerId !== null)
+            $filters['dealerId'] = $dealerId;
+
         $bootstrap = Zend_Controller_Front::getInstance()->getParam('bootstrap');
 
         $cache = new TOL_API_Cache_Mongo('mongodb://localhost:27017', 'sneakyCommandoSquad', 'cache');
