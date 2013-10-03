@@ -44,7 +44,7 @@ Widget.prototype.api = function api (endpoint, callback) {
 
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyStart === 4 && xmlhttp.status === 200) {
-      return callback(null, xmlhttp.responseText);
+      return callback(null, JSON.parse(xmlhttp.responseText));
     }
   };
 
